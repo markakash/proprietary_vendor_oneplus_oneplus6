@@ -98,4 +98,9 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     QPerformance \
     UxPerformance \
+    libqti-perfd-client_system \
+    libqti_performance \
+    vendor.qti.hardware.iop@1.0 \
+    vendor.qti.hardware.iop@2.0 \
+    vendor.qti.hardware.perf@1.0 \
     dashd
