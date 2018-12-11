@@ -16,8 +16,11 @@
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/bin/dpmd:system/bin/dpmd \
+    vendor/oneplus/oneplus6/proprietary/bin/perfservice:system/bin/perfservice \
     vendor/oneplus/oneplus6/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/oneplus/oneplus6/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
+    vendor/oneplus/oneplus6/proprietary/etc/init/perfservice.rc:system/etc/init/perfservice.rc \
+    vendor/oneplus/oneplus6/proprietary/etc/perf/whitelistedapps.xml:system/etc/perf/whitelistedapps.xml \
     vendor/oneplus/oneplus6/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/oneplus/oneplus6/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/oneplus/oneplus6/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
@@ -55,6 +58,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/libdpmframework.so:system/lib/libdpmframework.so \
     vendor/oneplus/oneplus6/proprietary/lib/libdpmtcm.so:system/lib/libdpmtcm.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.hardware.data.latency@1.0.so:system/lib/vendor.qti.hardware.data.latency@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libqti-at.so:system/lib/libqti-at.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libqti-util_system.so:system/lib/libqti-util_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
     vendor/oneplus/oneplus6/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/com.quicinc.cne.server@1.0.so:system/lib64/com.quicinc.cne.server@1.0.so \
@@ -73,7 +80,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so:system/lib64/vendor.qti.hardware.data.latency@1.0.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so
+    vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libqti-at.so:system/lib64/libqti-at.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so
+
 
 PRODUCT_PACKAGES += \
     libantradio \
@@ -84,4 +96,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleWCD9340 \
     dpmserviceapp \
     qcrilmsgtunnel \
+    QPerformance \
+    UxPerformance \
     dashd
